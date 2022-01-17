@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>player de musicas</title>
+
+        <script type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"> 
+    </script>
+        <script nomodule src="https: // unpkg .com / ionicons @ 5.5.2 / dist /
+            ionicons / ionicons.js"> 
+    </script>
+
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body >
+
+        <div id="container">
+
+
+            <div class="nomeplaylist">
+                <div id="chamarListaMusicas" onclick="callListaMusicas()">
+                    <ion-icon name="arrow-down-circle-outline" style="font-size:1.2rem"></ion-icon>
+                </div>
+                <div id="nameplaylist">
+                    <span> Ambiente de adoração </span>
+                </div>
+
+            </div>
+
+            <div id="fotoplayer">
+
+                <img id="img" src="" alt="">
+
+            </div>
+
+            <div id="nomeEcurtir">
+
+                nome musica
+
+
+            </div>
+
+            <div id="player">
+                <div id="barra">
+
+                    <!-- <div id="ponto"></div> -->
+                    <progress value="" max=""> </progress>
+                    
+
+
+                </div>
+
+                <div id="timer">
+
+                    <span id="timeinicio">0:00</span>
+                    <p class="timefinal">3:50</p>
+
+                </div>
+
+                <!-- <input type="range" id="barrastatus"> -->
+
+
+            </div>
+
+            <div id="alterarplayer">
+
+                <span id="voltar" onclick="prev()">
+                    <ion-icon name="play-skip-back-sharp"></ion-icon>
+                </span>
+                <span id="play" onclick="start()">
+                    <ion-icon name="play-sharp"></ion-icon>
+                </span>
+                <span id="pause" onclick="pouse()">
+                    <ion-icon name="pause-circle-sharp"></ion-icon>
+                </span>
+                <span id="frente" onclick="skip()">
+                    <ion-icon name="play-skip-forward-sharp"></ion-icon>
+                </span>
+
+            </div>
+
+            <audio src="" id="tagAudio"></audio>
+
+        </div>
+
+        <!-- lista de musicas --------------------------------------- -->
+
+        <div id="listadeMusicas">
+
+            <div class="nomeplaylist">
+                <div id="CallreprodutorMusicas" onclick="callReprodutor()">
+                    <ion-icon name="arrow-down-circle-outline" style="font-size:
+                        1.2rem"></ion-icon>
+                </div>
+                <div id="namelistademusicas">
+                    <ion-icon name="musical-notes-outline"></ion-icon>
+                    <span> lista de musicas </span>
+                </div>
+
+            </div>
+            <div id="containermusicas">
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+
+        <script src="app.js"></script>
+    </body>
+</html>
